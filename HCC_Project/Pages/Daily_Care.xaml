@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HCC_Project.Pages.Daily_Care">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#ebebeb">
+
+            <ScrollView Grid.Row="0" Grid.Column="0">
+                <StackLayout Margin="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="200"></RowDefinition>
+                            <RowDefinition Height="390"></RowDefinition>
+                            <RowDefinition Height="250"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Margin="15" Grid.ColumnSpan="3"  Source="Logo.png"></Image>
+
+
+                        <Frame
+                            Grid.ColumnSpan="3"
+                            Grid.Row="1" Grid.Column="0"
+                            CornerRadius="45"
+                            Margin="15,0,15,0" 
+                            HasShadow="False">
+                            <Label  
+                                Grid.ColumnSpan="3"
+                                Text="Twoje dzisiejsze zadania"
+                                TextColor="#242424"
+                                FontSize="20"
+                                Margin="-15"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"/>
+                        </Frame>
+                        
+                        <Grid Padding="12" Margin="15" BackgroundColor="White" Grid.ColumnSpan="3"
+                                Grid.Row="2" Grid.Column="0">
+                            <Label   
+                                Margin="10"
+                                Text="Kuchnia"
+                                FontSize="20"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"
+                                Grid.ColumnSpan="4"/>
+
+                            <Image Grid.Row="1" Grid.Column="0" Source="DailyCareImageBlack.png"></Image>
+                            <Label 
+                                   Grid.ColumnSpan="2" 
+                                   Grid.Row="1" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center" 
+                                   Grid.Column="1" 
+                                   Text="Podlać roślina 1"/>
+                            <ImageButton Margin="12" Source="CheckImage.pmg" 
+                                         CornerRadius="10"
+                                         Padding="5"
+                                         Grid.Row="1" Grid.Column="3"  BackgroundColor="Green"
+                                         HorizontalOptions="Center" 
+                                         VerticalOptions="Center"
+                                         />
+
+                        </Grid>
+
+                        <Grid Padding="15" Margin="15" BackgroundColor="White" Grid.ColumnSpan="3"
+                                Grid.Row="3" Grid.Column="0">
+                            <Label   
+                                Margin="10"
+                                Text="Przedpokój"
+                                FontSize="20"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"
+                                Grid.ColumnSpan="4"/>
+
+                            <Image Grid.Row="1" Grid.Column="0" Source="DailyCareImageBlack.png"></Image>
+                            <Label Grid.ColumnSpan="2" 
+                                   Grid.Row="1" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center" 
+                                   Grid.Column="1" 
+                                   Text="Podlać roślina 1"
+                                   />
+                            <ImageButton Margin="16" Source="CheckImage.pmg" 
+                                         CornerRadius="10"
+                                         Padding="5"
+                                         Grid.Row="1" Grid.Column="3"  BackgroundColor="Green"
+                                         HorizontalOptions="Center" 
+                                         VerticalOptions="Center"
+                                         />
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="DailyCareImageBlack.png"></Image>
+                            <Label Grid.ColumnSpan="2" 
+                                   Grid.Row="2" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center" 
+                                   Grid.Column="1" 
+                                   Text="Podlać roślina 2"/>
+                            <ImageButton Margin="15" Source="XImage.pmg" 
+                                         Padding="8"
+                                         CornerRadius="10"
+                                         Grid.Row="2" Grid.Column="3"  BackgroundColor="Gray"
+                                         HorizontalOptions="Center" 
+                                         VerticalOptions="Center"
+                                         />
+
+                            <Image Grid.Row="3" Grid.Column="0" Source="DailyCareImageBlack.png"></Image>
+                            <Label Grid.ColumnSpan="2" 
+                                   Grid.Row="3" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center" 
+                                   Grid.Column="1" 
+                                   Text="Podlać roślina 3"/>
+                            <ImageButton Margin="15" Source="XImage.pmg" 
+                                         Padding="8"
+                                         CornerRadius="10"
+                                         Grid.Row="3" Grid.Column="3"  BackgroundColor="Gray"
+                                         HorizontalOptions="Center" 
+                                         VerticalOptions="Center"
+                                         />
+                        </Grid>
+
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

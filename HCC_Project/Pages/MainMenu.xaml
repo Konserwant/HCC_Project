@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:plantmanager="clr-namespace:HCC_Project.Pages"
+            xmlns:y="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:plantmanagaeraccount="clr-namespace:HCC_Project.Pages.AccountPages"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="HCC_Project.Pages.MainMenu">
+  <!--Pages can be added as references or inline-->
+    <plantmanager:Daily_Care IconImageSource="DailyCareImage.png" >
+    </plantmanager:Daily_Care>
+    <plantmanager:Find_Plant IconImageSource="SearchImage.png" >
+    </plantmanager:Find_Plant>
+    <plantmanager:Encyclopedia IconImageSource="EncyclopediaImage.png" >
+    </plantmanager:Encyclopedia>
+    <plantmanagaeraccount:RegisteredAccount IconImageSource="AccountImage.png">
+    </plantmanagaeraccount:RegisteredAccount>
+</TabbedPage>

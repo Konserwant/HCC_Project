@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HCC_Project.Pages.RoomConfig">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
+            
+            <Label 
+                Margin="0,20,0,0" Grid.Row="0" 
+                FontSize="20"
+                Text="Konfiguracja nowego pomieszczenia"
+                VerticalOptions="Start" 
+                FontAttributes="Bold"
+                TextColor="Black"
+                HorizontalOptions="CenterAndExpand" />
+            <Label 
+                Margin="0,20,0,0"
+                Grid.Row="1" 
+                FontSize="15"
+                Text="Nazwa pomieszczenia"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry 
+                Margin="40,0,40,0"
+                Grid.Column="1"
+                Grid.Row="1"
+                />
+
+            <Entry 
+                Margin="40,0,40,0"
+                Grid.Column="1"
+                Grid.Row="1"
+                HorizontalTextAlignment="Center"
+                Text="Wartosc1"
+                />
+            <Entry 
+                Margin="40,0,40,0"
+                Grid.Column="1"
+                Grid.Row="1"
+                HorizontalTextAlignment="Center"
+                Text="Wartosc2"
+                />
+            <Entry 
+                Margin="40,0,40,0"
+                Grid.Column="1"
+                Grid.Row="1"
+                HorizontalTextAlignment="Center"
+                Text="Wartosc3"
+                />
+            <Entry 
+                Margin="40,0,40,0"
+                Grid.Column="1"
+                Grid.Row="1"
+                HorizontalTextAlignment="Center"
+                Text="Wartosc4"
+                />
+            <Button
+                BackgroundColor="Gray"
+                Margin="30"
+                CornerRadius="20"
+                TextColor="White"
+                Text="Dodaj pomieszczenie"
+                Clicked="OnButtonClicked"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

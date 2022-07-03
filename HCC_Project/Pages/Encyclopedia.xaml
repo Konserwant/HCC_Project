@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HCC_Project.Pages.Encyclopedia">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+
+            <ScrollView Grid.Row="0" Grid.Column="0">
+                <StackLayout Margin="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <ImageButton Clicked="ImageButton_Clicked" BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="0" Grid.Column="0" Source="DailyCareImage.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#21338f" Offset="0.0" />
+                                    <GradientStop Color="#05637d" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="1" Grid.Column="0"
+                                Text="Lista roślin"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                        <ImageButton Clicked="ImageButton_Clicked" BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="0" Grid.Column="1" Source="InsectImage.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush 
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#00678b" Offset="0.0" />
+                                    <GradientStop Color="#4dffcf" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="1" Grid.Column="1" 
+                                Text="Lista szkodników"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                        <ImageButton Clicked="ImageButton_Clicked" BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="0" Grid.Column="2" Source="MoldIcon.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush 
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#ad4707" Offset="0.0" />
+                                    <GradientStop Color="#fca772" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="1" Grid.Column="2" 
+                                Text="Lista grzybów"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                        <!-- 2 row -->
+                        <ImageButton Clicked="ImageButton_Clicked" BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="2" Grid.Column="0" Source="SOR.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#21338f" Offset="0.0" />
+                                    <GradientStop Color="#05637d" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="3" Grid.Column="0"
+                                Text="Środki ochrony roślin"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                        <ImageButton Clicked="ImageButton_Clicked" BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="2" Grid.Column="1" Source="Doniczka.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush 
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#00678b" Offset="0.0" />
+                                    <GradientStop Color="#4dffcf" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="3" Grid.Column="1" 
+                                Text="Dobór ziemi oraz doniczki"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

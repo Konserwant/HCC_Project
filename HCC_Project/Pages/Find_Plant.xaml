@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HCC_Project.Pages.Find_Plant">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            
+            <ScrollView Grid.Row="0" Grid.Column="0">
+                <StackLayout Margin="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="150"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Label Text="Znajdź rośliny" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  TextColor="#242424" FontSize="40"/>
+                        
+                        <SearchBar Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="3"
+                                   Placeholder="Wyszukaj"
+                                   CancelButtonColor="Gray"/>
+                        
+                        <ImageButton BackgroundColor="White" 
+                                     Margin="5" CornerRadius="15" 
+                                     Padding="15" Grid.Row="2" 
+                                     Grid.Column="0" Source="RecommendImage.png"
+                                     Clicked="OnButtonClicked">
+                            <ImageButton.Background>
+                                <LinearGradientBrush
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#21338f" Offset="0.0" />
+                                    <GradientStop Color="#05637d" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                            
+                        </ImageButton>
+                        
+                        <Label  Grid.Row="3" Grid.Column="0"
+                                Text="Polecane rośliny"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                        <ImageButton Clicked="OnButtonClicked" BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="2" Grid.Column="1" Source="FindPlantImage.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush 
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#00678b" Offset="0.0" />
+                                    <GradientStop Color="#4dffcf" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="3" Grid.Column="1" 
+                                Text="Zrób zdjęcie lub wczytaj"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                        <ImageButton Clicked="OnButtonClickedRooms" BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="2" Grid.Column="2" Source="HouseImage.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush 
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#ad4707" Offset="0.0" />
+                                    <GradientStop Color="#fca772" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="3" Grid.Column="2" 
+                                Text="Zarządzaj pomieszczeniami"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+                        
+                        <!-- 2 row -->
+                        <ImageButton BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="4" Grid.Column="0" Source="AlarmImage.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#780615" Offset="0.0" />
+                                    <GradientStop Color="#e30e2a" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="5" Grid.Column="0"
+                                Text="Ustawienia powiadomień"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                        <ImageButton BackgroundColor="White" Margin="5" CornerRadius="15" Padding="15" Grid.Row="4" Grid.Column="1" Source="LightMeterIcon.png">
+                            <ImageButton.Background>
+                                <LinearGradientBrush 
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#9e9600" Offset="0.0" />
+                                    <GradientStop Color="#dbd340" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </ImageButton.Background>
+                        </ImageButton>
+
+                        <Label  Grid.Row="5" Grid.Column="1" 
+                                Text="Czujnik światła"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+    

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HCC_Project.Pages.Rooms">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+
+            <ScrollView Grid.Row="0" Grid.Column="0">
+                <StackLayout Margin="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <ImageButton Clicked="BackToMenu" BackgroundColor="White" Margin="0,0,60,0" Grid.Row="0" Grid.Column="0" Source="NavArrow.png" />
+                        <Label  Grid.Row="0" Grid.Column="1"
+                                FontSize="20"
+                                Text="Lista pomieszczeń"
+                                TextColor="#242424"
+                                VerticalTextAlignment="Top"
+                                HorizontalTextAlignment="Center"/>
+
+                    </Grid>
+                    
+                    <!-- Rooms-->
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300"></RowDefinition>
+                            <RowDefinition Height="20"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <Image  Grid.Row="0" Grid.Column="0" Source="RoomImage.jpg" ></Image>
+                            <Label  HorizontalOptions="Center" Grid.Row="1" Text="Kuchnia"></Label>
+                        </Grid>
+                        <Grid Padding="40">
+                            <Image Grid.Row="2" Grid.Column="0" Source="DailyCareImageBlack.png"/>
+                            <Image Grid.Row="2" Grid.Column="1" Source="DailyCareImageBlack.png"/>
+                            <Image Grid.Row="2" Grid.Column="2" Source="DailyCareImageBlack.png"/>
+                        </Grid>
+                    </Grid>
+                   
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Button Clicked="OnButtonClicked" Margin="5" HeightRequest="100" HorizontalOptions="End" VerticalOptions="End" CornerRadius="45" Padding="15" Grid.Row="0" Grid.Column="3" TextColor="White" Text="Dodaj">
+                            <Button.Background>
+                                <LinearGradientBrush
+                                    StartPoint="1,1"
+                                    EndPoint="0,0">
+                                    <GradientStop Color="#21338f" Offset="0.0" />
+                                    <GradientStop Color="#05637d" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                    
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
